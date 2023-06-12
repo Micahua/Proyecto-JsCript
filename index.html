@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto bootstrap</title>
+    <!-- favicon-->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <link rel="shortcut icon" href="Diamon.ico" type="image/x-icon">
+    <!--kit de fontawesome-->
+    <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--estilos Mios-->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header class="header container-fluid d-flex justify-content-center">
+        <!-- Logo / Navegaciion  -->
+        <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+            <div class="container">
+                <a class="navbar-brand" href="#" id="loguito">
+                    <img src="./assets/img/codoacodo.png" alt="Logo" width="100px" class="d-inline-block">
+                    <span class="fs-5 text-light align-text-center">Conf. Bs.As.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-light " aria-current="page" href="#laConferencia">La
+                                Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-light" href="#losOradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-light" href="#lugarYfecha">Lugar y La Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-light" href="#convierteteEnOrador">Conviertete en
+                                Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-success" href="./pages/comprar_tickets.html">Comprar
+                                tickets</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Imagen con Texto -->
+    <section id="laConferencia" class="laConferencia ">
+        <div class="contenedorTextConf">
+            <h1>Conferencia Bs.As.</h1>
+            <p class="parrafoConferencia">Llega por primera vez a Argentina. Un evento para compartir con nuestra
+                comunidad conocimiento
+                y experiencia de los expertos que están creando futuro de Internet. Ven a conocer a miembros
+                del evento, a todos estudiantes de Codo a codo y a los oradores de primer nivel que tenemos para ti.
+                ¡Te esperamos! </p>
+            <div>
+                <a class="botOrador" href="#convierteteEnOrador">Quiero ser orador</a>
+                <a class="botTick" href="./pages/comprar_tickets.html">Comprar tickets</a>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!-- <section id="losOradores" class="sectionOradores"> -->
+        <section id="losOradores" class="container mb-5">
+            <div class="tituloRadores"> <span> CONOCE A LOS </span> <br>
+                <h2> ORADORES</h2>
+            </div>
+            <!-- TARJETAS DE ORADORES -->
+            <div class="card-group row row-cols-1 row-cols-2 row-cols-3">   
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                        <div class="card-body">
+                            <div class="cardTags align-text-center justify-content-center flex-wrap">
+                                <h5 class="card-title">
+                                    <span
+                                        style="margin-right: 5%; padding:1px; color:black; background-color:rgb(255, 196, 0)">
+                                        Presentación iPhone </span>
+                                    <span style="padding:1px; color:white; background-color:rgb(8, 115, 115)">
+                                        Inolvidable
+                                    </span>
+                                </h5>
+                            </div>
+                            <h2>Steve Jobs</h2>
+                            <p class="card-text">…un iPod de pantalla panorámica táctil; un teléfono
+                                móvil y un dispositivo de comunicaciones de Internet. Un iPod, un teléfono y
+                                un comunicador de Internet. Un iPod, un teléfono, ¿lo estás viendo ? Estos no son tres
+                                dispositivos separados, este es un dispositivo, y lo llamamos iPhone.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                        <div class="card-body">
+                            <div class="cardTags">
+                                <h5 class="card-title">
+                                    <span
+                                        style="margin-right: 5%; padding:1px; color:black; background-color:rgb(255, 196, 0)">
+                                        Bill G.
+                                        Foundation </span>
+                                    <span style="color:white; background-color:rgb(8, 115, 115)"
+                                        style="color:rgb(241, 241, 250)"> Orígen </span>
+                                </h5>
+                            </div>
+                            <h2>Bill Gates</h2>
+                            <p class="card-text">Un día, leo un artículo sobre millones de niños pobres que mueren por
+                                enfermedades
+                                que se podrían tratar mejor en países más ricos. Comenzamos a ver expertos e investigar
+                                esas
+                                enfermedades
+                                usando nuestros recursos para salvar esas vidas. Así nació esta fundación.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" class="card-img-top" alt="Ada">
+                        <div class="card-body">
+                            <div class="cardTags">
+                                <h5 class="card-title">
+                                    <span
+                                        style="margin-right: 5%; padding:1px; color:black; background-color:rgb(255, 196, 0)">
+                                        Ella cambió el mundo</span>
+                                    <span style="color:white; background-color:rgb(8, 115, 115)"
+                                        style="color:rgb(241, 241, 250)"> ¿Cómo
+                                        ? </span>
+                                </h5>
+                            </div>
+                            <h2>Ada Lovelace</h2>
+                            <p class="card-text">Augusta Ada Lovelace era una matemática y escritora inglesa,
+                                considerada el
+                                primer programador de computadoras. Instauró que 'máquina de
+                                computación' era mas que cálculos puros. En reconocimiento
+                                a su trabajo existe el lenguaje informático llamado "ADA".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lugarYfecha" class="container-fluid">
+            <div class="row background-color:dimgrey">
+                <div class="col-sm-12 col-md-6 columnaIzq">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="./assets/img/BA_01.jpg" class="d-block w-100" alt="">
+                            </div>
+
+
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./assets/img/BA_02.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./assets/img/BA_03.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div  class="col-sm-12 col-md-6 columnaDer">
+                    <h2>Bs.As - Octubre</h2>
+                    <p>Buenos aires es la provincia y la localidad más grande del estado de Argentina. Mientras que
+                        Honolulú
+                        es las ciudad más sureña de entre las principales ciudades estadounidenses. Aunque el nombre
+                        Honolulu se refieren a la área urbana en la costa sudeste de la isla de Oahu , la ciudad y el
+                        condado de Honolulú han formado una cuidad condado que cubre toda la ciudad(aprox. 600
+                        kilómetros de
+                        superficie).</p>
+                        <div><a href="" class="Conocemas"> Conocé Más</a> </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENEDOR DEL FORMULARIO -->
+
+        <div class="container  border-top border-primary " style="max-width: 1500px text-center"
+            id="contenedor-formulario">
+            <section id="convierteteEnOrador" class="formularioOrador">
+                <h2><span> CONVIERTETE EN UN </span> <br>
+                    <span> ORADOR <img style="width: 10%;" src="./assets/img/ContactUS.png" alt=""
+                            class="img-fluid ps-1">
+                </h2>
+                <p>Anótate como orador para dar una charla y cuéntanos de que quieres hablar.!</p>
+                <form action="" autocomplete="on">
+                    <div>
+                        <input class="inputNA" type="text" placeholder="Nombre" required>
+                        <input class="inputNA" type="text" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <textarea class="textArea" name="" id="" cols="44" rows="6"
+                            placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
+                    <p>Recuerda incluir un título para tu charla. </p>
+                    <div>
+                        <input type="submit" value="Enviar" class="formSubmit">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer container-fluid mt-5">
+        <div class="contenedorFooter row text-center gap-3 w-75 h-100 mx-auto">
+            <a class="col-sm-12 col-md-2" href="">Preguntas Frecuentes</a>
+            <a class="col-sm-12 col-md-2" href="">Contáctenos</a>
+            <a class="col-sm-12 col-md-1" href="">Prensa</a>
+            <a class="col-sm-12 col-md-2" href="">Conferencias</a>
+            <a class="col-sm-12 col-md-2" href="">Términos y Condiciones</a>
+            <a class="col-sm-12 col-md-1" href="">Privacidad</a>
+            <a class="col-sm-12 col-md-1" href="">Estudiantes</a>
+        </div>
+        <!-- <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a> -->
+        <a href=""><img class="inst" src="./assets/img/instag.png" alt="what"></a>
+        <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+    </footer>
+
+
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

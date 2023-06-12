@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anuphan', sans-serif;
+}
+
+.header {
+    height: 10vh;
+    background-color: rgb(53, 58, 64);
+}
+
+.headerNav {
+    height: 15%;
+    background-color: rgb(53, 58, 64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+/*===================CARRUSEL==========================*/
+.carousel-inner {
+    max-height: 39rem !important;
+}
+
+/*===================TEXTO SOBRE IMAGEN==========================*/
+
+.laConferencia {
+    height: 560px;
+    background: linear-gradient(to bottom, #00000026, #000000c2, #00000026), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contenedorTextConf {
+
+    width: 40%;
+    color: white;
+    height: 35%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.Fondoconf {
+    background-color: rgb(53, 58, 64);
+}
+
+.botOrador {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;    
+    position: relative;
+    display: inline-block;
+    background: #1bdb1400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.0em;
+    padding: 0.6em 1.5em;
+    border: rgb(241, 238, 238) 1px solid;
+}
+
+.botTick {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    /* -webkit-appearance: none; */
+    position: relative;
+    display: inline-block;
+    background: #31e40dfd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    border-color: #101110;
+    font-weight: 800;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.0em;
+    padding: 0.6em 1.5em;
+}
+
+.LasVegas {
+    height: 560px;
+    background: linear-gradient(to bottom, #00000026, #000000c2, #00000026), url("../assets/img/CESLasVegas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*===================CARDS ==========================*/
+.sectionOradores h2 {
+    text-align: center;
+}
+
+.tituloRadores {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4% 4% 0px 0px;
+
+}
+
+.cardPrecios{
+background-color: aqua;
+
+}
+.lugarYfecha {
+    background-color: rgb(53, 58, 64);
+    color: white;
+    height: 60vh;
+}
+
+.Conocemas {
+    background: #1bdb1400;
+    /* color: #fff; */
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0.6em 1.0em;
+    border: rgb(241, 238, 238) 1px solid;
+}
+
+#contenedor-formulario{    
+    padding: 0.5rem 0rem;
+}
+
+.formularioOrador {   
+    width: 50%;
+    height: 42vh;
+    margin:10%;
+    text-align: center;
+}
+
+
+.inputNA {
+    width: 49%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    padding-left: 0.5rem;
+}
+
+#Cantidad1{
+    width: 30%;
+}
+#Categoria1{
+    width: 30%;
+}
+.textArea {
+    width: 98%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    /*padding-left: 0.5rem;*/
+}
+
+.formSubmit {
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(7, 240, 42);
+    background-color: rgb(0, 255, 81);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.wsp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+}
+
+.inst {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    width: 50px;
+}
+
+.footer {
+    background: linear-gradient(to right, #1d3947, #1d4962, #1e5372);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedorFooter a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.volver {
+    color: green;
+    font: bold;
+    text-decoration: none;
+}
+
+/* Pagina Ticeckts :  */
+
+.containerCard{
+    margin-top:20px;    
+}
+
+.cardt {
+    border-radius: 5px;
+    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    position: relative;
+}
+
+.profile-card .card-block {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.72));
+}
+.card-block {
+    padding: 1.25rem;
+}
+
+.card .card-block p {
+    line-height: 25px;
+}
+
+.container{
+    margin-top:20px;    
+}
+
+.formularioVenta{  
+        width: 70%;
+        margin:0%;
+        text-align: center; 
+}
+
+/*vamos a cargar ahora el diseño para celular*/
+/*0 - 600px  */
+@media screen and (max-width: 567px) {
+    .headerNav {
+        background-color: rgb(56, 56, 56);
+        height: initial;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .contenedorLogo {
+        width: 70%;
+        align-content: normal
+    }
+
+    .listaNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .laConferencia {
+        height: 70%;
+        background: url("../assets/img/ba3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-right: initial;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contenedorTextConf {
+        background: linear-gradient(to bottom, #000000c2, #000000c2);
+        width: 100%;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .escritorio {
+        display: none;
+    }
+
+    .tituloRadores {
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .padreCards {
+        width: 90%;
+        height: initial;
+    }
+
+    .left {
+        width: 50%;
+        background-image: url("../assets/img/honolulu.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        width: 50%;
+        border-left: 1px solid white;
+        padding: 1%;
+    }
+
+    .right h2 {
+        margin-bottom: 1rem;
+    }
+
+    .right p {
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    .formularioOrador {
+        width: 80%;
+        height: 48vh;
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    .formularioOrador {
+        height: initial;
+    }
+
+    .footer {
+        height: initial;
+        padding: 30px;
+    }
+
+    .contenedorFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+        line-height: 1;
+
+    }
+
+}
+
+/*vamos a cargar ahora el diseño para Tablet*/
+/*600 - 767px  */
+
+@media screen and (min-width: 568px) and (max-width:767px) {
+    .headerNav {
+        /* background-color: rgb(113, 243, 43); */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+
+    }
+
+    .contenedorLogo {
+        width: 70%;
+    }
+
+    .navegacion {
+        width: 100%;
+    }
+
+    .listaNav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .linkNav {
+        font-size: 1rem;
+    }
+
+    .tituloRadores {
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .padreCards {
+        width: 90%;
+        height: initial;
+    }
+
+    .right {
+        width: 50%;
+        border-left: 1px solid white;
+        padding: 2%;
+    }
+
+    .right h2 {
+        margin-bottom: 1rem;
+    }
+
+    .right p {
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    .formularioOrador {
+        height: initial;
+    }
+
+    .conviRadores {
+        text-align: center;
+        padding-top: 0%;
+
+    }
+
+    .Botenviar {
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .footer {
+        height: initial;
+        padding: 10px;
+    }
+
+    .contenedorFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+        line-height: 1;
+
+    }
+
+}
+
+/*vamos a cargar ahora el diseño para Tablet XL*/
+/*768 - 991px  */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    .headerNav {
+        /* background-color: rgb(43, 190, 243); */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+
+    }
+
+    .contenedorLogo {
+        width: 50%;
+    }
+
+    .navegacion {
+        width: 100%;
+    }
+
+    .listaNav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .linkNav {
+        font-size: 1.2rem;
+    }
+
+    .tituloRadores {
+        text-align: center;
+        padding-top: 7%;
+    }
+
+    .padreCards {
+        width: 90%;
+        height: initial;
+    }
+
+    .right {
+        width: 50%;
+        border-left: 1px solid white;
+        padding: 2%;
+    }
+
+    .right h2 {
+        margin-bottom: 1rem;
+    }
+
+    .right p {
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    .recuerda {
+        text-align: left;
+    }
+
+    .conviRadores {
+        text-align: center;
+        padding-top: 0%;
+    }
+
+    .Botenviar {
+        text-align: center;
+
+    }
+
+    .footer {
+        height: initial;
+        padding: 10px;
+    }
+
+    .contenedorFooter {
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+        line-height: 1;
+
+    }
+
+}
+
+/*vamos a cargar ahora el diseño para Escritorio */
+/*992 - 1299px  */
+
+@media screen and (min-width: 992px) and (max-width:1299px) {
+    .headerNav {
+        padding: 1rem 1rem;
+    }
+
+    .contenedorLogo {
+        width: 30%;
+    }
+
+    .navegacion {
+        margin-left: 20px;
+        width: 65%;
+    }
+
+    .padreCards {
+        width: 90%;
+        height: initial;
+    }
+
+}
+
+@media screen and (min-width: 1300px) and (max-width:1399px) {}
